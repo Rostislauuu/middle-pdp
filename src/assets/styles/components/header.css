@@ -1,0 +1,11 @@
+.header-container {
+    width: 100%;
+    background-color: darkgrey;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    color: #fff;
+}
