@@ -8,6 +8,9 @@ const Header = () => {
             <Link to="/recaptcha" className="link">
                 Recaptcha
             </Link>
+            <Link to="/redux-persist" className="link">
+                Redux Persist
+            </Link>
         </div>
     )
 }

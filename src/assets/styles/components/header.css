@@ -3,9 +3,9 @@
     background-color: darkgrey;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
 }
 
 .link {
     color: #fff;
+    margin-right: 25px;
 }
