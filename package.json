@@ -7,6 +7,17 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.5.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-flowtype": "^8.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "prop-types": "^15.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -27,12 +38,15 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token=7f3a35135963"
+    "chromatic": "npx chromatic --project-token=7f3a35135963",
+    "lint": "eslint --quiet ./",
+    "lint:ci": "eslint -f json -o eslint-report.json ./"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "@coax/eslint-config-fe-react"
     ],
     "overrides": [
       {
@@ -58,6 +72,7 @@
     ]
   },
   "devDependencies": {
+    "@coax/eslint-config-fe-react": "^1.0.0",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
