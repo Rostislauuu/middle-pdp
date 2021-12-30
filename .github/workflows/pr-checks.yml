@@ -1,0 +1,24 @@
+name: PR Checks
+
+on:
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout repository on branch: ${{ github.REF }}'
+        uses: actions/checkout@v2
+      - name: Setup NodeJS
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - name: Install packages
+        run: npm ci
+      - name: Run Tests 
+        run: npm run test:ci
+      - name: Run List 
+        run: npm run lint:ci
+        
