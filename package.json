@@ -4,23 +4,10 @@
   "private": true,
   "dependencies": {
     "@storybook/addon-docs": "^6.4.9",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "@typescript-eslint/eslint-plugin": "^5.8.1",
-    "@typescript-eslint/parser": "^5.8.1",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^8.5.0",
-    "eslint-config-react-app": "^7.0.0",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-flowtype": "^8.0.3",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
     "prop-types": "^15.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-google-login": "^5.2.2",
     "react-google-recaptcha": "^2.1.0",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
@@ -45,8 +32,7 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest",
-      "@coax/eslint-config-fe-react"
+      "react-app/jest"
     ],
     "overrides": [
       {
@@ -72,7 +58,6 @@
     ]
   },
   "devDependencies": {
-    "@coax/eslint-config-fe-react": "^1.0.0",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-links": "^6.4.9",
