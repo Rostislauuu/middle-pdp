@@ -11,6 +11,9 @@ const Header = () => {
             <Link to="/redux-persist" className="link">
                 Redux Persist
             </Link>
+            <Link to="/google-auth" className="link">
+                Google Auth
+            </Link>
         </div>
     )
 }
